@@ -146,6 +146,10 @@ void CSnakeDlg::OnPaint()
 	}
 	else
 	{
+		CPaintDC dc(this);
+		CBrush Brush1;
+
+
 		CDialogEx::OnPaint();
 	}
 }
