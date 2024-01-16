@@ -2,6 +2,7 @@
 // SnakeDlg.h: 头文件
 //
 
+#include "SHE.h"
 #pragma once
 
 
@@ -31,4 +32,7 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnStart();
+	SHE snake1;
 };

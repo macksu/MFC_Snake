@@ -31,6 +31,8 @@ public:
 // 实现
 protected:
 	DECLARE_MESSAGE_MAP()
+public:
+
 };
 
 CAboutDlg::CAboutDlg() : CDialogEx(IDD_ABOUTBOX)
@@ -42,8 +44,7 @@ void CAboutDlg::DoDataExchange(CDataExchange* pDX)
 	CDialogEx::DoDataExchange(pDX);
 }
 
-BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
-END_MESSAGE_MAP()
+
 
 
 // CSnakeDlg 对话框
@@ -65,6 +66,7 @@ BEGIN_MESSAGE_MAP(CSnakeDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+
 END_MESSAGE_MAP()
 
 
@@ -160,4 +162,18 @@ HCURSOR CSnakeDlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
 }
+
+void CSnakeDlg::OnStart()
+{
+	snake1.Init();
+	CWnd* pwnd = GetDlgItem(IDC_GAMEAREA);
+	CDC* pDC = pwnd->GetDC();
+	snake1.Draw(pDC);
+}
+
+
+
+
+
+
 

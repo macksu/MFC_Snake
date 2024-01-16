@@ -1,10 +1,5 @@
 #pragma once
 
-struct Point {
-	int x;
-	int y;
-	Point(int _x, int _y) :x(_x), y(_y) {}
-};
 enum class Direction {
 	UP,
 	DOWN,
@@ -24,9 +19,11 @@ public:
 	void Move(Direction dir);
 	bool CheckCollision(int x, int y) const;
 	void GROW();
-	vector<Point>& GetBody()const;
+	void Draw(CDC*pDC);
+	void  GetBody()const;
 private:
-	vector<Point>Body;
+	vector<CPoint>Body;
 	Direction currentDirection;
+
 };
 
