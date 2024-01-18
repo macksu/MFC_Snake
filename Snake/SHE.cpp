@@ -13,6 +13,21 @@ void SHE::Init()
 
 void SHE::Move(Direction dir)
 {
+	char ch;
+	ch = _getwch();
+	switch (ch)
+	{
+	case  UP:
+		if(currentDirection !=Direction::DOWN) 
+	case DOWN:
+		if (currentDirection != Direction::UP)
+	case  LEFT:
+		if (currentDirection != Direction::RIGHT)
+	case  RIGHT:
+		if (currentDirection != Direction::LEFT)
+	default:
+		break;
+	}
 }
 
 bool SHE::CheckCollision(int x, int y) const
@@ -42,4 +57,8 @@ vector<CPoint>& SHE::GetBody() const
 {
 	// TODO: 在此处插入 return 语句
 	return ;
+}
+
+void SHE::GAMEOVER()
+{
 }
