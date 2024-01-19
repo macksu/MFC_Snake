@@ -59,6 +59,15 @@ vector<CPoint>& SHE::GetBody() const
 	return ;
 }
 
+void SHE::setDirection(Direction dir)
+{
+	if (dir == Direction::UP && currentDirection != Direction::DOWN ||
+		dir == Direction::DOWN && currentDirection != Direction::UP ||
+		dir == Direction::LEFT && currentDirection != Direction::RIGHT ||
+		dir == Direction::RIGHT && currentDirection != Direction::LEFT)
+		currentDirection = dir;
+}
+
 void SHE::GAMEOVER()
 {
 }

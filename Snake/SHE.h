@@ -21,6 +21,7 @@ public:
 	void GROW();
 	void Draw(CDC*pDC);
 	void  GetBody()const;
+	void setDirection(Direction dir);
 	void GAMEOVER();
 private:
 	vector<CPoint>Body;
