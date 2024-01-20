@@ -8,6 +8,7 @@ void SHE::Init()
 	Body.push_back(CPoint(9,10));
 	Body.push_back(CPoint(10,10));
 	Body.push_back(CPoint(11,10));
+	//Éú³ÉÉß
 
 }
 

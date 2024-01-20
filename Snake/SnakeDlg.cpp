@@ -166,10 +166,11 @@ HCURSOR CSnakeDlg::OnQueryDragIcon()
 
 void CSnakeDlg::OnStart()
 {
-	snake1.Init();
+	//初始化
+	snake1.Init(); 
 	CWnd* pwnd = GetDlgItem(IDC_GAMEAREA);
 	CDC* pDC = pwnd->GetDC();
-	snake1.Draw(pDC);
+	snake1.Draw(pDC);   
 }
 
 
