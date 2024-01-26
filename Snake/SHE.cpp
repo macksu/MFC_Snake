@@ -71,4 +71,5 @@ void SHE::setDirection(Direction dir)
 
 void SHE::GAMEOVER()
 {
+	//сно╥╫АйЬ
 }

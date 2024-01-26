@@ -35,5 +35,6 @@ protected:
 public:
 	afx_msg void OnStart();
 	SHE snake1;
-	afx_msg void On32777();
+
+	afx_msg void OnEND();
 };

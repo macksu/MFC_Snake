@@ -68,6 +68,7 @@ BEGIN_MESSAGE_MAP(CSnakeDlg, CDialogEx)
 	ON_WM_QUERYDRAGICON()
 
 	ON_COMMAND(ID_32777, &CSnakeDlg::On32777)
+	ON_COMMAND(ID_32772, &CSnakeDlg::OnEND)
 END_MESSAGE_MAP()
 
 
@@ -174,15 +175,7 @@ void CSnakeDlg::OnStart()
 }
 
 
-
-
-
-
-
-
-
-void CSnakeDlg::On32777()
+void CSnakeDlg::OnEND()
 {
 	// TODO: 在此添加命令处理程序代码
-	snake1.GAMEOVER();
 }
