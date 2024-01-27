@@ -35,6 +35,7 @@ protected:
 public:
 	afx_msg void OnStart();
 	SHE snake1;
-
+	void DrawSnake();
+	CPoint Food; //食物
 	afx_msg void OnEND();
 };

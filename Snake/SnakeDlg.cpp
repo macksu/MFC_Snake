@@ -174,6 +174,11 @@ void CSnakeDlg::OnStart()
 	snake1.Draw(pDC);   
 }
 
+void CSnakeDlg::DrawSnake()
+{
+
+}
+
 
 void CSnakeDlg::OnEND()
 {
