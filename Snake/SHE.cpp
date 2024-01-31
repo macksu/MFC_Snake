@@ -72,4 +72,5 @@ void SHE::setDirection(Direction dir)
 void SHE::GAMEOVER()
 {
 	//сно╥╫АйЬ
+	if(Body.push_back(CPoint(9, 10));)
 }

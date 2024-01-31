@@ -176,7 +176,7 @@ void CSnakeDlg::OnStart()
 
 void CSnakeDlg::DrawSnake()
 {
-
+	//绘制
 }
 
 
