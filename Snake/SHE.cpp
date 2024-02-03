@@ -14,21 +14,27 @@ void SHE::Init()
 
 void SHE::Move(Direction dir)
 {
-	char ch;
-	ch = _getwch();
-	switch (ch)
-	{
-	case  UP:
-		if(currentDirection !=Direction::DOWN) 
-	case DOWN:
-		if (currentDirection != Direction::UP)
-	case  LEFT:
-		if (currentDirection != Direction::RIGHT)
-	case  RIGHT:
-		if (currentDirection != Direction::LEFT)
-	default:
+	int headX = Body.front().x;
+	int headY = Body.front().y;
+
+	switch (currentdirection) {
+	case Direction::UP:
+		headY--;
+		break;
+	case Direction::DOWN:
+		headY++;
+		break;
+	case Direction::LEFT:
+		headX--;
+		break;
+	case Direction::RIGHT:
+		headX++;
 		break;
 	}
+
+	Body.insert(Body.begin(), CPoint(headX, headY));
+	Body.pop_back();
+
 }
 
 bool SHE::CheckCollision(int x, int y) const
